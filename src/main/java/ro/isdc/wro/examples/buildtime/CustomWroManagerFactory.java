@@ -24,10 +24,10 @@ public class CustomWroManagerFactory extends
 	    factory.addPreProcessor(new CssUrlRewritingProcessor());
 	    factory.addPreProcessor(new SemicolonAppenderPreProcessor());
 	    factory.addPreProcessor(new YUICssCompressorProcessor());
+	    factory.addPreProcessor(new UglifyJsProcessor());
 
 	    //factory.addPostProcessor(new CssVariablesProcessor());
-	    
-	    factory.addPostProcessor(new UglifyJsProcessor());
+	    //factory.addPostProcessor(new UglifyJsProcessor());
 
 	    return factory;
 	}
