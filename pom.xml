@@ -33,7 +33,7 @@
 						</goals>
 					</execution>
 				</executions>
-
+			
 				<configuration>
 					<targetGroups>jquery,jquery-ui,appli</targetGroups>
 					<ignoreMissingResources>false</ignoreMissingResources>
