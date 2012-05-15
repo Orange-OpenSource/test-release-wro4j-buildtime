@@ -1,3 +1,6 @@
+/*
+ * public domain
+ */
 package ro.isdc.wro.examples.buildtime;
 
 import ro.isdc.wro.extensions.processor.css.YUICssCompressorProcessor;
