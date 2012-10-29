@@ -5,11 +5,11 @@
 <!doctype html>
 <html>
 	<head>
-	    <wro:style groupNames="appli,jquery-ui" exploded="${param.debug}"/>
+	    <wro:style groupNames="appli,jquery-ui" exploded="${param.debug}" pretty="${param.debug}"/>
 		<script>
 		<%@ include file="js/script.min.js" %>;
 		(function() {
-			var files = <wro:asJsArray groupNames='jquery,jquery-ui,appli' groupType="js" exploded="${param.debug}" />;
+			var files = <wro:asJsArray groupNames='jquery,jquery-ui,appli' groupType="js" exploded="${param.debug}"  pretty="${param.debug}" />;
 			$script(files);
 		})();
 		</script>
