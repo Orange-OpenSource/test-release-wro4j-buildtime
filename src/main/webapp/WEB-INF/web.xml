@@ -27,7 +27,7 @@
 
 	<filter>
 		<filter-name>wroContextFilter</filter-name>
-		<filter-class>ro.isdc.wro.examples.buildtime.WroContextFilter</filter-class>
+		<filter-class>com.francetelecom.wro.examples.buildtime.WroContextFilter</filter-class>
 	</filter>
 
 	<filter-mapping>

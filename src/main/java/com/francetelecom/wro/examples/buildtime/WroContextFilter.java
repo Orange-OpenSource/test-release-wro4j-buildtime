@@ -1,7 +1,7 @@
 /*
  * comes from Alex Objelean on wro4j's mailing list
  */
-package ro.isdc.wro.examples.buildtime;
+package com.francetelecom.wro.examples.buildtime;
 
 import java.io.IOException;
 

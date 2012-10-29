@@ -1,7 +1,7 @@
 /*
  * public domain
  */
-package ro.isdc.wro.examples.buildtime;
+package com.francetelecom.wro.examples.buildtime;
 
 import ro.isdc.wro.extensions.processor.css.YUICssCompressorProcessor;
 import ro.isdc.wro.manager.factory.standalone.DefaultStandaloneContextAwareManagerFactory;

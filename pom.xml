@@ -37,7 +37,7 @@
 				<configuration>
 					<targetGroups>jquery,jquery-ui,appli</targetGroups>
 					<ignoreMissingResources>false</ignoreMissingResources>
-					<wroManagerFactory>ro.isdc.wro.examples.buildtime.CustomWroManagerFactory</wroManagerFactory>
+					<wroManagerFactory>com.francetelecom.wro.examples.buildtime.CustomWroManagerFactory</wroManagerFactory>
 					<destinationFolder>${project.build.directory}/generated-resources/wro/wro/</destinationFolder>
 					<wroFile>${basedir}/src/main/webapp/WEB-INF/wro.xml</wroFile>
 				</configuration>
