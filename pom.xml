@@ -37,32 +37,19 @@
 				<configuration>
 					<targetGroups>jquery,jquery-ui,appli</targetGroups>
 					<ignoreMissingResources>false</ignoreMissingResources>
+					
+					<!-- I know this could be done using only a property file 
+						but I don't care -->
 					<wroManagerFactory>com.orange.wro.examples.buildtime.CustomWroManagerFactory</wroManagerFactory>
-					<!-- 
-					<destinationFolder>${basedir}/src/main/webapp/wro/</destinationFolder>
+					
+					<!-- this contextFolder is important for wro4j to find the files -->
 					<contextFolder>${basedir}/src/main/webapp/</contextFolder>
-					 -->
-					<!-- <destinationFolder>${project.build.directory}/generated-resources/wro/wro/</destinationFolder> -->
+					
+					<!-- this destinationFolder is overriden by m2e-wro4j -->
 					<destinationFolder>${project.build.directory}/${project.build.finalName}/wro/</destinationFolder>
-					<contextFolder>${project.build.directory}/${project.build.finalName}</contextFolder>
 					<wroFile>${basedir}/src/main/webapp/WEB-INF/wro.xml</wroFile>
 				</configuration>
 			</plugin>
-			<!-- 
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>2.1.1</version>
-				<configuration>
-					<webResources>
-						<resource> -->
-							<!-- this is relative to the pom.xml directory --> <!--
-							<directory>${project.build.directory}/generated-resources/wro/</directory>
-						</resource>
-					</webResources>
-				</configuration>
-			</plugin>
-			-->
 		</plugins>
 	</build>
 	<dependencies>
