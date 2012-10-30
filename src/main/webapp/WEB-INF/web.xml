@@ -17,7 +17,7 @@
 		<listener-class>ro.isdc.wro.http.WroServletContextListener</listener-class>
 	</listener>
 	<listener>
-		<listener-class>com.francetelecom.wro.taglib.config.WroContextListener</listener-class>
+		<listener-class>com.orange.wro.taglib.config.WroContextListener</listener-class>
 	</listener>
 	
 	<context-param>
@@ -27,7 +27,7 @@
 
 	<filter>
 		<filter-name>wroContextFilter</filter-name>
-		<filter-class>com.francetelecom.wro.examples.buildtime.WroContextFilter</filter-class>
+		<filter-class>com.orange.wro.examples.buildtime.WroContextFilter</filter-class>
 	</filter>
 
 	<filter-mapping>
