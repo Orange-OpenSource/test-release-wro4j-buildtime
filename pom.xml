@@ -16,7 +16,8 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
+                <configuration>
+                    <encoding>UTF-8</encoding>
 					<source>6</source>
 					<target>6</target>
 				</configuration>
@@ -48,7 +49,7 @@
 					<!-- this destinationFolder is overriden by m2e-wro4j -->
 					<destinationFolder>${project.build.directory}/${project.build.finalName}/wro/</destinationFolder>
 					<wroFile>${basedir}/src/main/webapp/WEB-INF/wro.xml</wroFile>
-				</configuration>
+                </configuration>
 			</plugin>
 		</plugins>
 	</build>
@@ -58,12 +59,12 @@
 			<artifactId>wro4j-core</artifactId>
 			<version>${wro4j.version}</version>
 		</dependency>
-
-		<dependency>
-			<groupId>ro.isdc.wro4j</groupId>
-			<artifactId>wro4j-extensions</artifactId>
-			<version>${wro4j.version}</version>
-		</dependency>
+        <dependency>
+            <groupId>ro.isdc.wro4j</groupId>
+            <artifactId>wro4j-extensions</artifactId>
+            <version>${wro4j.version}</version>
+            <scope>provided</scope> <!-- we use provided so that this doesn't go in the packaged files -->
+        </dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
@@ -82,9 +83,8 @@
 		<dependency>
 			<groupId>com.orange.wro4j</groupId>
 			<artifactId>wro4j-taglib</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<version>1.0</version>
 		</dependency>
 	</dependencies>
-
 
 </project>
