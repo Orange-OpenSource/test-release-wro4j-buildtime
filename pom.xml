@@ -83,7 +83,7 @@
 		<dependency>
 			<groupId>com.orange.wro4j</groupId>
 			<artifactId>wro4j-taglib</artifactId>
-			<version>1.1</version>
+			<version>1.2</version>
 		</dependency>
     </dependencies>
 
@@ -100,7 +100,9 @@
                 <repository>
                     <id>staging</id>
                     <name>staging repo</name>
-                    <url>https://oss.sonatype.org/content/repositories/comorange-256/</url>
+                    <url>https://oss.sonatype.org/content/repositories/public/</url>
+                    <snapshots><enabled>true</enabled></snapshots>
+                    <releases><enabled>true</enabled></releases>
                 </repository>
             </repositories>
         </profile>

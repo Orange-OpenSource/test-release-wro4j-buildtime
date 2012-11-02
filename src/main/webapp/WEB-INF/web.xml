@@ -21,13 +21,13 @@
 	</listener>
 	
 	<context-param>
-		<param-name>ro.isdc.wro.base.url</param-name>
+		<param-name>com.orange.wro.base.url</param-name>
 		<param-value>/wro</param-value>
 	</context-param>
 
 	<filter>
 		<filter-name>wroContextFilter</filter-name>
-		<filter-class>com.orange.wro.examples.buildtime.WroContextFilter</filter-class>
+		<filter-class>ro.isdc.wro.http.WroContextFilter</filter-class>
 	</filter>
 
 	<filter-mapping>

@@ -1,9 +1,9 @@
-(function($) {
+(function() {
 
 function init() {
 	$( "#accordion" ).accordion();
 }
 
-$(init);
+typeof $script !== "undefined" ? $script.ready("jqui", function() { $(init); }) : $(init);
 
-})(jQuery);
+})();

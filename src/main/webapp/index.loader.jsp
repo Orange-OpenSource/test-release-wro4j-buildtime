@@ -1,6 +1,6 @@
 <%--public domain --%>
 <%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" session="false"%>
-<%@ taglib uri="http://isdc.ro/wro/taglib" prefix="wro" %>
+<%@ taglib uri="http://orange.com/wro/taglib" prefix="wro" %>
 
 <!doctype html>
 <html>
@@ -9,8 +9,12 @@
 		<script>
 		<%@ include file="js/script.min.js" %>;
 		(function() {
-			var files = <wro:asJsArray groupNames='jquery,jquery-ui,appli' groupType="js" exploded="${param.debug}"  pretty="${param.debug}" />;
-			$script(files);
+			var jqueryFiles = <wro:asJsArray groupNames='jquery' groupType="js" exploded="${param.debug}"  pretty="${param.debug}" />;
+			var jqueryuiFiles = <wro:asJsArray groupNames='jquery-ui' groupType="js" exploded="${param.debug}"  pretty="${param.debug}" />;
+			var appliFiles = <wro:asJsArray groupNames='appli' groupType="js" exploded="${param.debug}"  pretty="${param.debug}" />;
+			$script(jqueryFiles, "jquery");
+			$script.ready("jquery", function() { $script(jqueryuiFiles, "jqui"); });
+			$script(appliFiles);
 		})();
 		</script>
 	</head>
