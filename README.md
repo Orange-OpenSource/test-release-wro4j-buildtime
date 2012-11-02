@@ -7,3 +7,8 @@ However it is difficult to make it work both with a command line built and with 
 [m2e-wro](http://download.jboss.org/jbosstools/updates/m2e-wro4j/) with WTP,
 particularly when we use the CSS url rewriting feature (which we need most of the time).
 
+In this configuration, we can use the debug mode thanks to the taglib, which works correctly
+because the original files are used. Then when we build from command line, the css url rewriter
+works correctly as well. Only when you try to use the wro-generated files directly from Eclipse WTP
+the URLs in CSS are incorrect.
+
